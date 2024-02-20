@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            margin-left: 90px;
+        }
+
+        input {
+            width: 30%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-left: 100px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 100px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            margin-left: 100px;
+
+        }
+
+        .css-box {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <label>Name:</label><input type="text" class="js-name">
+    <br>
+    <label>Employee Id:</label><input type="text" class="js-id">
+    <br>
+    <label>Role:</label><input type="text" class="js-role">
+    <br>
+    <label>Salary:</label><input type="text" class="js-salary">
+    <br>
+    <label>Joined Date:</label><input type="text" class="js-date">
+    <br>
+    <br>
+    <button class="js-insertran">Insert with RandomId</button> <button class="js-insertcus">Insert with
+        CustomId</button> <button class="js-read">Read</button><button class="js-update">Update</button>
+    <button class="js-delete">Delete</button><button class="js-getalldata">Get All</button><button
+        class="js-getallrealtime">Get RealTime</button>
+    <br>
+    <br>
+    <div class="container"></div>
+
+    <script type="module">
+
+        const E = V; (function (C, I) { const U = V, M = C(); while (!![]) { try { const L = parseInt(U(0x170)) / 0x1 + parseInt(U(0x193)) / 0x2 + parseInt(U(0x182)) / 0x3 + -parseInt(U(0x17f)) / 0x4 * (parseInt(U(0x18a)) / 0x5) + parseInt(U(0x17d)) / 0x6 + -parseInt(U(0x174)) / 0x7 * (parseInt(U(0x197)) / 0x8) + -parseInt(U(0x17a)) / 0x9; if (L === I) break; else M['push'](M['shift']()); } catch (p) { M['push'](M['shift']()); } } }(u, 0x35b19)); const insertRandomButton = document[E(0x191)](E(0x184)), insertCustomButton = document[E(0x191)]('.js-insertcus'), readButton = document[E(0x191)](E(0x185)), updateButton = document['querySelector']('.js-update'), deleteButton = document[E(0x191)](E(0x173)), getAllData = document['querySelector'](E(0x181)), getAllDataRealTime = document['querySelector'](E(0x18f)), name = document[E(0x191)](E(0x16c)), Id = document[E(0x191)](E(0x194)), Role = document[E(0x191)]('.js-role'), Salary = document[E(0x191)](E(0x187)), date = document[E(0x191)](E(0x18b)), container = document[E(0x191)]('.container'); let html = ''; insertRandomButton[E(0x18d)](E(0x172), () => { AddDocument_AutoID(); }), insertCustomButton[E(0x18d)]('click', () => { AddDocument_CustomID(); }), readButton['addEventListener'](E(0x172), () => { GetADocument(); }), updateButton[E(0x18d)]('click', () => { UpdateFieldsInDocument(); }), deleteButton[E(0x18d)](E(0x172), () => { DeleteDocument(); }), getAllData[E(0x18d)](E(0x172), () => { GetAllData(); }), getAllDataRealTime[E(0x18d)](E(0x172), () => { GetAllDataInRealTime(); }); import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js'; import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js'; const firebaseConfig = { 'apiKey': 'AIzaSyCBQSAtCbq6-QWo0UCU2R1G4t-f5OQKw1k', 'authDomain': E(0x189), 'databaseURL': 'https://avian-pact-378003-default-rtdb.asia-southeast1.firebasedatabase.app', 'projectId': E(0x179), 'storageBucket': E(0x190), 'messagingSenderId': '960981261075', 'appId': '1:960981261075:web:0eea8a286549efc5f058e6', 'measurementId': E(0x16e) }, app = initializeApp(firebaseConfig), analytics = getAnalytics(app); import { getFirestore, doc, setDoc, getDoc, getDocs, collection, addDoc, updateDoc, deleteDoc, deleteField, onSnapshot } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js'; function u() { const W = ['No\x20Documents\x20Found', 'addEventListener', 'Deleted', '.js-getallrealtime', 'avian-pact-378003.appspot.com', 'querySelector', '</p>\x20</div>\x20<br>', '206880OcoQUT', '.js-id', 'error', '<div\x20class=\x22css-box\x22><p>Name:', '1515368zAzSUT', 'forEach', 'Updated', '.js-name', 'DateofJoining', 'G-LPBMBH2TFM', '</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Id:\x20', '370532vYJnol', '</p></div>\x20<br>', 'click', '.js-delete', '7xeexUz', 'value', '<div\x20class=\x22css-box\x22>\x20<p>Name:', 'Added', 'exists', 'avian-pact-378003', '4957965MNGNRC', 'data', 'innerHTML', '2564196LVFzwK', 'NameOfEmployee', '4bCAARK', 'Employees', '.js-getalldata', '865944ynPAlT', 'then', '.js-insertran', '.js-read', 'Role', '.js-salary', 'log', 'avian-pact-378003.firebaseapp.com', '1148755vXlTHc', '.js-date']; u = function () { return W; }; return u(); } const db = getFirestore(); async function AddDocument_AutoID() { const x = E; var C = collection(db, x(0x180)); const I = await addDoc(C, { 'NameOfEmployee': name[x(0x175)], 'Id': Id[x(0x175)], 'Role': Role[x(0x175)], 'Salary': Salary[x(0x175)], 'DateofJoining': date[x(0x175)] })[x(0x183)](() => { const G = x; alert('Added'), Id[G(0x175)] = '', name['value'] = '', Role[G(0x175)] = '', Salary[G(0x175)] = '', date[G(0x175)] = ''; })['catch'](M => { const Z = x; console[Z(0x188)](M); }); } async function AddDocument_CustomID() { const X = E, C = doc(db, 'Employees', Id[X(0x175)]); try { await setDoc(C, { 'NameOfEmployee': name['value'], 'Id': Id['value'], 'Role': Role[X(0x175)], 'Salary': Salary[X(0x175)], 'DateofJoining': date[X(0x175)] }), alert(X(0x177)), Id[X(0x175)] = '', name[X(0x175)] = '', Role[X(0x175)] = '', Salary[X(0x175)] = '', date['value'] = ''; } catch (I) { console[X(0x195)](I); } } async function GetADocument() { const J = E; var C = doc(db, J(0x180), Id[J(0x175)]); const I = await getDoc(C); I['exists']() ? (name['value'] = I[J(0x17b)]()[J(0x17e)], Id[J(0x175)] = I[J(0x17b)]()['Id'], Role['value'] = I[J(0x17b)]()[J(0x186)], Salary[J(0x175)] = I['data']()['Salary'], date[J(0x175)] = I[J(0x17b)]()[J(0x16d)]) : alert(J(0x18c)); } async function UpdateFieldsInDocument() { const i = E, C = doc(db, i(0x180), Id[i(0x175)]); try { await updateDoc(C, { 'NameOfEmployee': name['value'], 'Role': Role['value'], 'Salary': Salary[i(0x175)], 'DateofJoining': date[i(0x175)] }), alert(i(0x199)); } catch (I) { console[i(0x195)](I); } } function V(C, I) { const M = u(); return V = function (L, p) { L = L - 0x16c; let U = M[L]; return U; }, V(C, I); } async function DeleteDocument() { const n = E; var C = doc(db, 'Employees', Id[n(0x175)]); const I = await getDoc(C); I[n(0x178)]() ? await deleteDoc(C)['then'](() => { const e = n; alert(e(0x18e)); }) : console['log'](n(0x18c)); } async function GetAllData() { const s = E, C = await getDocs(collection(db, s(0x180))); C[s(0x198)](I => { const g = s; let M = g(0x196) + I[g(0x17b)]()[g(0x17e)] + g(0x16f) + I['data']()['Id'] + g(0x192); html += M; }), container['innerHTML'] = html, html = ''; } async function GetAllDataInRealTime() { const C = collection(db, 'Employees'); onSnapshot(C, I => { const N = V; I['forEach'](M => { const w = V; let L = w(0x176) + M['data']()[w(0x17e)] + w(0x16f) + M[w(0x17b)]()['Id'] + w(0x171); html += L; }), container[N(0x17c)] = html, html = ''; }); }
+    </script>
+</body>
